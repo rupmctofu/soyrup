@@ -3,68 +3,54 @@ export const diseno_grafico = {
   title: "Diseño gráfico",
   projects: [
     {
-      slug: "tapasbar_china",
-      date: "3/2/2022",
-      title: "Tapasbar China",
-      description: "Un proyecto de diseño gráfico para la empresa Tapasbar China.",
-      image: "/diseno_grafico/preview.jpg",
+      slug: "greencarpet-logo",
+      date: "4/2/2022",
+      title: "Green Carpet Logo",
+      description: "Creación de logotipo para Green Carpet.",
+      image: "/diseno_grafico/gclogo/preview.jpg",
       content: {
-        mockup: "/diseno_grafico/mockup.jpg",
+        mockup: "/diseno_grafico/gclogo/mockup.jpg",
         images: [
-          "/diseno_grafico/1.jpg",
-          "/diseno_grafico/2.jpg",
-          "/diseno_grafico/3.jpg",
-          "/diseno_grafico/4.jpg",
+          "/diseno_grafico/gclogo/1.jpg",
+          "/diseno_grafico/gclogo/2.jpg",
+          "/diseno_grafico/gclogo/3.jpg",
+          "/diseno_grafico/gclogo/4.jpg",
         ]
       }
     },
     {
-      slug: "quartz_elements",
-      date: "3/2/2022",
-      title: "Quartz Elements",
-      description: "Un proyecto de diseño gráfico para la empresa Quartz Elements.",
-      image: "/diseno_grafico/preview.jpg",
+      slug: "lbry-logo",
+      date: "4/2/2022",
+      title: "LBRY logo concept",
+      description: "Creación de concepto de logotipo para lbry.",
+      image: "/diseno_grafico/lbry/preview.jpg",
       content: {
-        mockup: "/diseno_grafico/mockup.jpg",
+        mockup: "/diseno_grafico/lbry/mockup.jpg",
         images: [
-          "/diseno_grafico/1.jpg",
-          "/diseno_grafico/2.jpg",
-          "/diseno_grafico/3.jpg",
-          "/diseno_grafico/4.jpg",
+          "/diseno_grafico/lbry/1.jpg",
+          "/diseno_grafico/lbry/2.jpg",
+          "/diseno_grafico/lbry/3.jpg",
+          "/diseno_grafico/lbry/4.jpg",
         ]
       }
     },
     {
-      slug: "the_coffee_house",
-      date: "3/2/2022",
-      title: "The Coffee House",
-      description: "Un proyecto de diseño gráfico para la empresa The Coffee House.",
-      image: "/diseno_grafico/preview.jpg",
+      slug: "panemare-identidad",
+      date: "4/2/2022",
+      title: "Panemare Identidad Corporativa",
+      description: "Creación de identidad corporativa para Panemare Restaurant",
+      image: "/diseno_grafico/panemare/preview.jpg",
       content: {
-        mockup: "/diseno_grafico/mockup.jpg",
+        mockup: "/diseno_grafico/panemare/mockup.jpg",
         images: [
-          "/diseno_grafico/1.jpg",
-          "/diseno_grafico/2.jpg",
-          "/diseno_grafico/3.jpg",
-          "/diseno_grafico/4.jpg",
+          "/diseno_grafico/panemare/1.jpg",
+          "/diseno_grafico/panemare/2.jpg",
+          "/diseno_grafico/panemare/3.jpg",
+          "/diseno_grafico/panemare/4.jpg",
         ]
       }
     },
-    {
-      slug: "one_more_time",
-      date: "3/2/2022",
-      title: "One More Time",
-      description: "Un proyecto de diseño gráfico para la empresa One More Time.",
-      image: "/diseno_grafico/preview.jpg",
-      content: {
-        mockup: "/diseno_grafico/mockup.jpg",
-        images: [
-          "/diseno_grafico/1.jpg",
-          "/diseno_grafico/2.jpg",
-          "/diseno_grafico/3.jpg",
-          "/diseno_grafico/4.jpg",
-        ]
-      }
-    },
+
+
   ]
 }
