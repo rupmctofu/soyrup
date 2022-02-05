@@ -2,6 +2,7 @@
   import { ui } from "$content/contact";
 
   let form = {};
+  let send_button = "ENVIAR";
 
   function clearForm() {
     form = {
@@ -12,6 +13,7 @@
   }
 
   async function sendForm() {
+    send_button = "ENVIANDO...";
     const req = await fetch("/contact", {
       method: "POST",
       headers: {
@@ -22,6 +24,10 @@
 
     if (req.ok) {
       clearForm();
+      send_button = "GRACIAS 😉";
+      setTimeout(() => {
+        send_button = "ENVIAR";
+      }, 1000);
     }
   }
 </script>
@@ -55,7 +61,7 @@
     </div>
 
     <div class="row xfill jcenter">
-      <button class="pri semi">{ui.button_send}</button>
+      <button class="pri semi">{send_button}</button>
     </div>
   </form>
 </div>

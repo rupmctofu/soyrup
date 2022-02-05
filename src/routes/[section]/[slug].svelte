@@ -19,10 +19,13 @@
 
   export let section, projects;
   const project = projects.current;
+
+  console.log(project);
 </script>
 
 <svelte:head>
-  <title>{project.title}</title>
+  <title>Soy Rup | {project.title}</title>
+  <meta name="description" content={project.description} />
 </svelte:head>
 
 <section class="current-project col acenter xfill">

@@ -3,21 +3,22 @@ import nodemailer from 'nodemailer';
 export async function post({ request }) {
   const form = await request.json();
 
-  console.log(form);
-
   let transporter = nodemailer.createTransport({
-    host: 'smtp-mail.outlook.com',
+    host: "smtp-mail.outlook.com",
+    secureConnection: false,
     port: 587,
-    secure: false,
+    tls: {
+      ciphers: 'SSLv3'
+    },
     auth: {
-      user: "verdu@live.com",
-      pass: "88Lifemail"
-    }
+      user: "atontao@hotmail.com",
+      pass: "5683Laugh"
+    },
   });
 
   let info = await transporter.sendMail({
-    from: '"Verdu" <verdu@live.com>',
-    to: 'verdu@live.com',
+    from: "'Robert Vicente' <atontao@hotmail.com>",
+    to: "roberto.v.lopez@gmail.com",
     subject: `Contacto web - ${form.name}<${form.email}>`,
     text: form.message,
   });
@@ -26,6 +27,8 @@ export async function post({ request }) {
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
   return {
-    body: form
+    body: {
+      message: 'Email sent',
+    }
   };
 }
