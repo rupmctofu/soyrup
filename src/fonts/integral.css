@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'integral-cf';
+    src: url('integral-cf-bold.woff2') format('woff2'),
+        url('integral-cf-bold.woff') format('woff'),
+        url('integral-cf-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'integral-cf';
+    src: url('integral-cf-medium.woff2') format('woff2'),
+        url('integral-cf-medium.woff') format('woff'),
+        url('integral-cf-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

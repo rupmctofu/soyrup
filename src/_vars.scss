@@ -1,0 +1,36 @@
+//colors
+$pri: #0bd680;
+$sec: #BBB;
+$gradient-dark: #230e2d;
+$gradient-light: #031239;
+$black: #000;
+$white: #fff;
+$grey: #808080;
+
+//ui colors
+$bg: linear-gradient(to right, $gradient-dark 0%, $gradient-light 100%);
+$border: #e6e6e6;
+
+//text
+$base: $black;
+$sub: $grey;
+
+//notificators
+$link: #2d8cf0;
+$success: #19be6b;
+$warning: #ff9900;
+$error: #ed3f14;
+$disabled: $border;
+
+//shadows
+$shadow: 0 2px 5px 0 rgba($black, 0.2);
+$shadow-hard: 0 2px 5px 0 rgba(#000, 0.8);
+$inset: inset 0 2px 5px 0 rgba($black, 0.2);
+$inset-hard: inset 0 2px 5px 0 rgba(#000, 0.8);
+
+//media queries
+$mobile: 600px;
+$tablet: 1000px;
+
+//text size
+$text: 1em;
