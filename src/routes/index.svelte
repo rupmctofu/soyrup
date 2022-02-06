@@ -1,11 +1,11 @@
 <script>
-  import Slider from "$lib/Slider.svelte";
-  import Contact from "$lib/Contact.svelte";
-
   import { ui } from "$content/home";
   import { diseno_grafico } from "$content/diseno_grafico";
   import { diseno_web } from "$content/diseno_web";
   import { motion_graphics } from "$content/motion_graphics";
+
+  import Slider from "$lib/Slider.svelte";
+  import Contact from "$lib/Contact.svelte";
 </script>
 
 <svelte:head>
@@ -21,7 +21,7 @@
     Diseñador <strong>Gráfico</strong>, <strong>Web</strong> y realizador de videos <strong>Motion Graphics</strong>.
   </p>
 
-  <a class="btn pri semi" href="./#diseno_grafico">VER PROYECTOS</a>
+  <a class="btn pri semi" href="/#diseno_grafico">VER PROYECTOS</a>
 </section>
 
 <section id="diseno_grafico">

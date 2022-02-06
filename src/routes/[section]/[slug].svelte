@@ -19,8 +19,6 @@
 
   export let section, projects;
   const project = projects.current;
-
-  console.log(project);
 </script>
 
 <svelte:head>

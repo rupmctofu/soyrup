@@ -102,10 +102,9 @@
 
   input,
   textarea {
-    background: rgba($white, 5%);
+    background: rgba($black, 0.3);
     backdrop-filter: blur(10px);
     color: $sec;
-    font-weight: bold;
     border-radius: 8px;
     box-shadow: inset 2px 2px 4px -1px rgba($black, 0.4);
     padding: 18px 24px;
