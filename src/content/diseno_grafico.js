@@ -50,7 +50,53 @@ export const diseno_grafico = {
         ]
       }
     },
-
-
+    {
+      slug: "quartz-identidad",
+      date: "4/2/2022",
+      title: "Quartz Elements Identidad Corporativa",
+      description: "Creación de identidad corporativa para Quartz Elements",
+      image: "/diseno_grafico/quartz/preview.jpg",
+      content: {
+        mockup: "/diseno_grafico/quartz/mockup.jpg",
+        images: [
+          "/diseno_grafico/quartz/1.jpg",
+          "/diseno_grafico/quartz/2.jpg",
+          "/diseno_grafico/quartz/3.jpg",
+          "/diseno_grafico/quartz/4.jpg",
+        ]
+      }
+    },
+    {
+      slug: "salvament-logo",
+      date: "4/2/2022",
+      title: "Logotipo Salvament Garraf",
+      description: "Creación de logotipo para Salvament Garraf",
+      image: "/diseno_grafico/salvamentgarraf/preview.jpg",
+      content: {
+        mockup: "/diseno_grafico/salvamentgarraf/mockup.jpg",
+        images: [
+          "/diseno_grafico/salvamentgarraf/1.jpg",
+          "/diseno_grafico/salvamentgarraf/2.jpg",
+          "/diseno_grafico/salvamentgarraf/3.jpg",
+          "/diseno_grafico/salvamentgarraf/4.jpg",
+        ]
+      }
+    },
+    {
+      slug: "tapasbar-identidad",
+      date: "4/2/2022",
+      title: "Identidad Coorporativa Tapasbar China",
+      description: "Creación de y desarrollo de Identidad Coorporativa para Tapasbar China",
+      image: "/diseno_grafico/tapasbar/preview.jpg",
+      content: {
+        mockup: "/diseno_grafico/tapasbar/mockup.jpg",
+        images: [
+          "/diseno_grafico/tapasbar/1.jpg",
+          "/diseno_grafico/tapasbar/2.jpg",
+          "/diseno_grafico/tapasbar/3.jpg",
+          "/diseno_grafico/tapasbar/4.jpg",
+        ]
+      }
+    },
   ]
 }
