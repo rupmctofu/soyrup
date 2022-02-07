@@ -37,7 +37,7 @@
   <ul class="slider xfill" bind:this={sliderElement}>
     {#each projects as project}
       <li class="slide">
-        <a class="fill" href="/{slug}/{project.slug}">
+        <a class="fill" href="/{slug}/{project.slug}" target="_self">
           <div class="card col jend fill" style="background-image: url({project.image})">
             <h3 class="xfill">{project.title}</h3>
           </div>

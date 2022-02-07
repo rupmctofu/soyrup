@@ -1,9 +1,9 @@
 import nodemailer from 'nodemailer';
 
 const account = {
-  user: "verdu@live.com",//"atontao@hotmail.com",
-  pass: "88Lifemail",//"5683Laugh",
-  to: "verdukactus@gmail.com"//"roberto.v.lopez@gmail.com"
+  user: "atontao@hotmail.com",
+  pass: "5683Laugh",
+  to: "roberto.v.lopez@gmail.com"
 }
 
 export async function post({ request }) {

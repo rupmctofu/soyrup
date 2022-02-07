@@ -140,8 +140,7 @@
       backdrop-filter: blur(10px);
       color: $white;
       line-height: 1;
-      box-shadow: inset 0 1px 2px -1px rgba($white, 0.6),
-                  0 -10px 50px 0 rgba($black, 0.3);
+      box-shadow: inset 0 1px 2px -1px rgba($white, 0.6), 0 -10px 50px 0 rgba($black, 0.3);
       padding: 20px 20px 25px 20px;
     }
   }

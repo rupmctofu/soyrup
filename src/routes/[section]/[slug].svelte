@@ -13,12 +13,18 @@
 </script>
 
 <script>
+  import { onMount } from "svelte";
   import Mockup from "$lib/Mockup.svelte";
   import Gallery from "$lib/Gallery.svelte";
   import Others from "$lib/Others.svelte";
 
   export let section, projects;
   const project = projects.current;
+
+  onMount(() => {
+    const scroll = document.querySelector(".scroll");
+    scroll.scrollTo(0, 0);
+  });
 </script>
 
 <svelte:head>
