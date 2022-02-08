@@ -2,6 +2,9 @@
   import "$fonts/integral.css";
   import "$fonts/operator.css";
   import Nav from "$lib/Nav.svelte";
+
+  let videoElement;
+  $: if (videoElement) videoElement.playbackRate = 0.7;
 </script>
 
 <main>
@@ -9,7 +12,7 @@
 
   <div class="video-wrapper fill">
     <div class="overlay fill" />
-    <video playsinline autoplay loop muted src="/bg.mp4" class="fill" />
+    <video bind:this={videoElement} play playsinline autoplay loop muted src="/bg.mp4" class="fill" />
   </div>
 
   <div class="scroll fill">
