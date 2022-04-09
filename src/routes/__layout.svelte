@@ -30,7 +30,7 @@
       autoplay
       loop
       muted
-      src="/bg.mp4"
+      src="/bg-rup.mp4"
       class="fill"
     />
   </div>
@@ -59,7 +59,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      background: rgba($black, 0.7);
+      background: rgba($black, 0.3);
     }
 
     video {
