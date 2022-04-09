@@ -1,10 +1,10 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 const account = {
-  user: "atontao@hotmail.com",
-  pass: "5683Laugh",
-  to: "roberto.v.lopez@gmail.com"
-}
+  user: import.meta.env.VITE_EMAIL_FROM,
+  pass: import.meta.env.VITE_EMAIL_PASS,
+  to: import.meta.env.VITE_EMAIL_TO,
+};
 
 export async function post({ request }) {
   const form = await request.json();
@@ -35,7 +35,7 @@ export async function post({ request }) {
 
   return {
     body: {
-      message: 'Email sent',
-    }
+      message: "Email sent",
+    },
   };
 }
