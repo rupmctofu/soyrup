@@ -5,4 +5,5 @@ export const ui = {
   input_email: "Email",
   input_message: "Mensaje",
   button_send: "Enviar",
+  alt_email: "Puedes contactarme por email a",
 };

@@ -28,6 +28,13 @@
       setTimeout(() => {
         send_button = "ENVIAR";
       }, 1000);
+    } else {
+      alert(
+        "Hubo un error al enviar el formulario. Intentalo de nuevo en unos instantes"
+      );
+      setTimeout(() => {
+        send_button = "ENVIAR";
+      }, 1000);
     }
   }
 </script>
@@ -35,11 +42,23 @@
 <div class="content col acenter xfill">
   <h2>{ui.title}</h2>
 
+  <p class="alt-email">
+    {ui.alt_email}
+    <a href="mailto:robert.v.lopez@gmail.com">robert.v.lopez@gmail.com</a>
+  </p>
+
   <form class="col xfill" on:submit|preventDefault={sendForm}>
     <div class="dbl-input row jbetween xfill">
       <div class="input-wrapper col">
         <label for="input_name">{ui.input_name}</label>
-        <input id="input_name" class="xfill" type="text" bind:value={form.name} placeholder={ui.input_name} required />
+        <input
+          id="input_name"
+          class="xfill"
+          type="text"
+          bind:value={form.name}
+          placeholder={ui.input_name}
+          required
+        />
       </div>
 
       <div class="input-wrapper col">
@@ -57,7 +76,13 @@
 
     <div class="input-wrapper col xfill">
       <label for="input_message">{ui.input_message}</label>
-      <textarea id="input_message" class="xfill" bind:value={form.message} placeholder={ui.input_message} required />
+      <textarea
+        id="input_message"
+        class="xfill"
+        bind:value={form.message}
+        placeholder={ui.input_message}
+        required
+      />
     </div>
 
     <div class="row xfill jcenter">
@@ -77,6 +102,11 @@
 
   h2 {
     color: $sec;
+    margin-bottom: 40px;
+  }
+
+  .alt-email {
+    color: $white;
     margin-bottom: 40px;
   }
 

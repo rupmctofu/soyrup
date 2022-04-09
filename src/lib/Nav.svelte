@@ -1,6 +1,7 @@
 <script>
   import { ui } from "$content/nav";
   import { page } from "$app/stores";
+  import { lang } from "../stores";
 </script>
 
 <nav class="top-nav row jbetween acenter">
@@ -11,7 +12,7 @@
   <ul class="desktop-menu row yfill">
     {#each ui.routes as { slug, title }}
       <li class="yfill" class:active={$page.url.pathname === slug}>
-        <a href={slug} class="row nowrap acenter fill">{title}</a>
+        <a href={slug} class="row nowrap acenter fill">{title[$lang]}</a>
       </li>
     {/each}
   </ul>
@@ -22,7 +23,7 @@
     {#each ui.routes as { slug, title, icon }}
       <li class="row yfill">
         <a href={slug} class="row fcenter fill">
-          <img src={icon} alt={title} />
+          <img src={icon} alt={title[$lang]} />
         </a>
       </li>
     {/each}
@@ -43,7 +44,8 @@
     backdrop-filter: blur(10px);
     letter-spacing: 0.15em;
     border-radius: 16px;
-    box-shadow: inset 1px 1px 2px -1px rgba($white, 0.4), inset -1px -1px 2px -1px rgba($black, 0.4);
+    box-shadow: inset 1px 1px 2px -1px rgba($white, 0.4),
+      inset -1px -1px 2px -1px rgba($black, 0.4);
     padding: 0 40px;
     z-index: 99;
 
@@ -101,7 +103,8 @@
     background: rgba($black, 0.3);
     backdrop-filter: blur(10px);
     letter-spacing: 0.15em;
-    box-shadow: inset 0 1px 2px -1px rgba($white, 0.4), inset 0 -1px 2px -1px rgba($black, 0.4);
+    box-shadow: inset 0 1px 2px -1px rgba($white, 0.4),
+      inset 0 -1px 2px -1px rgba($black, 0.4);
     z-index: 99;
 
     @media (max-width: $tablet) {

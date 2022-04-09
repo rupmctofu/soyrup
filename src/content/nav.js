@@ -2,23 +2,35 @@ export const ui = {
   routes: [
     {
       slug: "/#diseno_grafico",
-      title: "diseño gráfico",
+      title: {
+        es: "Diseño Gráfico",
+        ca: "Disseny Gràfic",
+      },
       icon: "/graphic-white.svg",
     },
     {
       slug: "/#diseno_web",
-      title: "diseño web",
+      title: {
+        es: "Diseño Web",
+        ca: "Disseny Web",
+      },
       icon: "/web-white.svg",
     },
     {
       slug: "/#motion_graphics",
-      title: "motion graphics",
+      title: {
+        es: "Motion Graphics",
+        ca: "Motion Graphics",
+      },
       icon: "/motion-white.svg",
     },
     {
       slug: "/#contacto",
-      title: "contacto",
+      title: {
+        es: "Contacto",
+        ca: "Contacte",
+      },
       icon: "/contact-white.svg",
     },
-  ]
-}
+  ],
+};
