@@ -1,7 +1,7 @@
 <script>
   import { ui } from "$content/contact";
 
-  let form = {};
+  /* let form = {};
   let send_button = "ENVIAR";
 
   function clearForm() {
@@ -36,18 +36,19 @@
         send_button = "ENVIAR";
       }, 1000);
     }
-  }
+  } */
 </script>
 
 <div class="content col acenter xfill">
   <h2>{ui.title}</h2>
 
-  <p class="alt-email">
+  <p class="alt-email col acenter">
     {ui.alt_email}
-    <a href="mailto:robert.v.lopez@gmail.com">robert.v.lopez@gmail.com</a>
+    <br>
+    <a class="btn pri semi" href="mailto:roberto.v.lopez@gmail.com">roberto.v.lopez@gmail.com</a>
   </p>
 
-  <form class="col xfill" on:submit|preventDefault={sendForm}>
+  <!-- <form class="col xfill" on:submit|preventDefault={sendForm}>
     <div class="dbl-input row jbetween xfill">
       <div class="input-wrapper col">
         <label for="input_name">{ui.input_name}</label>
@@ -88,7 +89,7 @@
     <div class="row xfill jcenter">
       <button class="pri semi">{send_button}</button>
     </div>
-  </form>
+  </form> -->
 </div>
 
 <style lang="scss">
@@ -107,10 +108,18 @@
 
   .alt-email {
     color: $white;
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 40px;
+
+    a {
+      width: auto;
+      margin-top: 20px;
+      font-size: initial;
+    }
   }
 
-  form {
+  /* form {
     max-width: 900px;
   }
 
@@ -148,5 +157,5 @@
   button {
     width: 70%;
     max-width: 200px;
-  }
+  } */
 </style>
