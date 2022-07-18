@@ -1,6 +1,18 @@
 <script>
   import { ui } from "$content/contact";
 
+  let email = "roberto.v.lopez@gmail.com";
+
+  function copyToClip() {
+    navigator.clipboard.writeText(email).then(() => {
+      email = "Copiado!";
+
+      setTimeout(() => {
+        email = "roberto.v.lopez@gmail.com";
+      }, 2000);
+    });
+  }
+
   /* let form = {};
   let send_button = "ENVIAR";
 
@@ -44,8 +56,8 @@
 
   <p class="alt-email col acenter">
     {ui.alt_email}
-    <br>
-    <a class="btn pri semi" href="mailto:roberto.v.lopez@gmail.com">roberto.v.lopez@gmail.com</a>
+    <br />
+    <button class="pri semi" on:click={copyToClip}>{email}</button>
   </p>
 
   <!-- <form class="col xfill" on:submit|preventDefault={sendForm}>
@@ -112,10 +124,11 @@
     font-size: 24px;
     margin-bottom: 40px;
 
-    a {
+    button {
       width: auto;
       margin-top: 20px;
       font-size: initial;
+      text-transform: lowercase;
     }
   }
 
